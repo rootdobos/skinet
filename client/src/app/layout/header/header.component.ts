@@ -3,14 +3,17 @@ import { MatBadge } from '@angular/material/badge';
 import { MatButton } from '@angular/material/button';
 
 import { MatIcon } from '@angular/material/icon';
+import { RouterLink, RouterLinkActive } from "@angular/router";
 
 @Component({
   selector: 'app-header',
   imports: [
     MatIcon,
     MatButton,
-    MatBadge
-  ],
+    MatBadge,
+    RouterLink,
+    RouterLinkActive
+],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
